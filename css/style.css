@@ -69,13 +69,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .home-image path {
   opacity: 0;
   cursor: pointer;
 }
 .home-image path:hover {
+  opacity: 1;
+}
+path.current-floor {
   opacity: 1;
 }
 .counter-group {
@@ -87,6 +90,7 @@ body {
   cursor: pointer;
   color: #fff;
   border: none;
+  background-color: #fff;
 }
 .counter-arrow-down {
   transform: rotateX(180deg);
